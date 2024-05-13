@@ -6,6 +6,10 @@
         <title>Document</title>
     </head>
 
+    <?php
+    
+    ?>
+
     <body>
         <h1>Welcum to HowToWebsite</h1>
     </body>
