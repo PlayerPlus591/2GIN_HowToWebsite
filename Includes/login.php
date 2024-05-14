@@ -6,6 +6,12 @@
         <title>Login</title>
     </head>
     <body>
-    
+        <div class="container">
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter Email:" name="email" class="form-control">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
