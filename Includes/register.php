@@ -1,5 +1,12 @@
-<!--Pedro Code-->
+<?php //Deni Code
+    session_start();
+    if(isset($_SESSION["user"]))
+    {
+        header("Location: userDashboard.php");
+    }
+?>
 
+<!--Pedro Code-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,6 +91,7 @@
                 <input type="submit" class="btn btn-primary" value="Register" name="submit">
             </div>
         </form>
+        <div><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
     </div>
 </body>
 </html>
