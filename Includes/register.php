@@ -91,7 +91,8 @@
                 <input type="submit" class="btn btn-primary" value="Register" name="submit">
             </div>
         </form>
-        <div><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
+        <!--deni--><div><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
     </div>
+
 </body>
 </html>
