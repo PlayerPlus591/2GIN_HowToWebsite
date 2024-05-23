@@ -1,0 +1,64 @@
+/* styles.css */
+/* Deni Code */
+
+body {
+    text-align: center;
+    font-style: oblique;
+    background-color: #c0c0c0;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+form {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    /*border: 3px solid #737373;*/
+}
+
+.window {
+    width: 400px;
+    max-width: auto;
+    margin: auto;
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-btn input {
+    width: 100%;
+    padding: 10px;
+    /*background-color: #007BFF;*/
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+/*.form-btn input:hover {background-color: #0056b3;}*/
+
+.alert {
+    color: red;
+    margin-bottom: 15px;
+}

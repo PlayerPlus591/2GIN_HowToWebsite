@@ -13,6 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="RegisterAndLoginStyles.css"> <!--Deni Code-->
+    <link rel="stylesheet" href="https://unpkg.com/98.css"> <!--Deni Code-->
 
 </head>
 <body>
@@ -73,22 +75,42 @@
             }
         }
         ?>
-        <form action="register.php" method="post">
-            <div class="form-group">
-                <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Email:">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="password" placeholder="Password:">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
-            </div>
 
-            <div class="form-btn">
-                <input type="submit" class="btn btn-primary" value="Register" name="submit">
+        <form action="register.php" method="post"> <!--Deni & Filip Code-->
+            <div class="window" style="width: 400px">
+                <div class="title-bar">
+                  <div class="title-bar-text">Register</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="window-body">
+                    <p style="text-align: left; margin-top: 1px">Full Name:</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
+                    </div>
+    
+                    <p style="text-align: left;">Email:</p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email:">
+                    </div>
+
+                    <p style="text-align: left;">Password:</p>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password:">
+                    </div>
+
+                    <p style="text-align: left;">Repeat Password:</p>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
+                    </div>
+        
+                    <div class="form-btn">
+                        <input type="submit" class="btn btn-primary" value="Register" name="submit">
+                    </div>
+                </div>
             </div>
         </form>
         <!--deni--><div><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
