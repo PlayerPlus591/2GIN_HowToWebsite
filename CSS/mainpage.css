@@ -1,0 +1,86 @@
+  /*  LOU */
+  
+
+  /* Main assembly */
+  body {
+    background-color: #d3d3d3;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    background-color: #0000ff;
+    color: white;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    font: Serif;
+  }
+
+  /* Defining the canva class */
+  .canvas {
+    background-color: #d3d3d3;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin: 0px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #0000ff;
+    color: white;
+  }
+
+  /* Defines a column */
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Defines a column in the navbar */
+  .navleft {
+    float: left;
+    width: 88%;
+  }
+
+  .navright {
+    float: left;
+    width: 12%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
