@@ -14,7 +14,8 @@
 
     <body>
         <header>
-            <p style="margin: 0px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
+            <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
+
             <div class="topnav">
                 <div class="row">
                     <div class="navleft">
@@ -41,6 +42,8 @@
                     <h1>HowToWebsite</h1>
                 </div>
                 
+                <br>
+                <br>
                 
                 <div class="description">
                     <div class="card">
@@ -86,10 +89,9 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
 
                 <h1>Contributors</h1>
+                <br>
                 <br>
 
                 <div class="row">
@@ -132,7 +134,7 @@
 
                 <div class="footer">
                     <div class="footer">
-                        <h1></h1>
+                        <p>2GIN - 2023/24</p>
                     </div>
                 </div>
             </div>

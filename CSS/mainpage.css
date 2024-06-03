@@ -70,6 +70,13 @@
     height: 200px;
   }
 
+  .footer {
+    background-color: #1A4D2E;
+    padding: 30px;
+    color: white;
+    text-align: center;
+  }
+
   .name {
     font-size: 40px;
     margin-top: 10px;
