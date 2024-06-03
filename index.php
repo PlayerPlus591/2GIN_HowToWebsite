@@ -14,6 +14,7 @@
 
     <body>
         <header>
+            <p style="margin: 0px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
             <div class="topnav">
                 <div class="row">
                     <div class="navleft">
@@ -35,14 +36,19 @@
 
         <main>
             <div class="canvas">
-
-                <h1>Welcome to HowToWebsite</h1>
                 
-                <div class="card">
-                    <h2>Main Description</h2>
-                    <p>When making a website, you might come across a few problems that you can not seem to solve.</p>
-                    <p>Here you will learn Step By Step how to make your own website. You will learn how to set up your server and how to
-                    use HTML, CSS, JavaScript and more.</p>
+                <div class="maintitle">
+                    <h1>HowToWebsite</h1>
+                </div>
+                
+                
+                <div class="description">
+                    <div class="card">
+                        <h2>Main Description</h2>
+                        <p>When making a website, you might come across a few problems that you can not seem to solve.</p>
+                        <p>Here you will learn Step By Step how to make your own website. You will learn how to set up your server and how to
+                        use HTML, CSS, JavaScript and more.</p>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -76,8 +82,60 @@
 
                 </div>
 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <h1>Contributors</h1>
+                <br>
+
+                <div class="row">
+
+                    <div class="profilecolumn">
+                        <div class="fakeimage">image</div>
+                        <div class="name">Pedro</div>
+                        <br>
+                        <div class="job">Frontend</div>
+                        <div class="job">Design</div>
+                    </div>
+                    
+                    <div class="profilecolumn">
+                        <div class="fakeimage">image</div>
+                        <div class="name">Ghost</div>
+                        <br>
+                        <div class="job">Frontend</div>
+                        <div class="job">Design</div>
+                    </div>
+                    
+                    <div class="profilecolumn">
+                        <div class="fakeimage">image</div>
+                        <div class="name">PlayerPlus591</div>
+                        <br>
+                        <div class="job">Frontend</div>
+                        <div class="job">Design</div>
+                    </div>
+                    
+                    <div class="profilecolumn">
+                        <div class="fakeimage">image</div>
+                        <div class="name">Alexandro</div>
+                        <br>
+                        <div class="job">Frontend</div>
+                        <div class="job">Design</div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="footer">
+                    <div class="footer">
+                        <h1></h1>
+                    </div>
+                </div>
             </div>
-        
         </main>
     </body>
 </html>

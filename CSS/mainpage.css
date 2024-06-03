@@ -9,8 +9,8 @@
   h1 {
     text-align: center;
     font-size: 60px;
-    background-color: #0000ff;
     color: white;
+    margin: 0px;
   }
 
   h2 {
@@ -22,19 +22,67 @@
     font: Serif;
   }
 
+  .maintitle {
+    background-color: #1A4D2E;
+    padding: 50px;
+    margin: 0px;
+  }
+
   /* Defining the canva class */
   .canvas {
-    background-color: #d3d3d3;
+    background-color: #4F6F52;
+  }
+
+  .description {
+    margin-top: 10px;
   }
 
   .card {
-    background-color: white;
+    background-color: #E8DFCA;
     border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .profilecolumn {
+    float: left;
+    background-color: #1A4D2E;
+    color: white;
+    border: 3px;
+    width: 22.5%;
+    margin-left: 2%;
+    margin-right: 0px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+  .fakeimage {
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  .name {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .job {
+    font-size: 20px;
+    margin: 10px;
   }
 
   /* Add a black background color to the top navigation */
   .topnav {
-    background-color: #333;
+    background-color: #1A4D2E;
     overflow: hidden;
     margin: 0px;
   }
@@ -52,12 +100,12 @@
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: white;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #0000ff;
+    background-color: #1A4D2E;
     color: white;
   }
 
