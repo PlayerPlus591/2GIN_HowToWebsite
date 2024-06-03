@@ -95,7 +95,7 @@
                 <div class="row">
 
                     <div class="profilecolumn">
-                        <img class="fakeimage" src="Images/flep-high.webp">
+                        <img class="profileimage" src="Images/flep-high.webp">
                         <div class="name">Pedro</div>
                         <br>
                         <div class="job">Frontend</div>
@@ -103,7 +103,7 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <div class="fakeimage">image</div>
+                        <img class="profileimage" src="Images/ghost.webp">
                         <div class="name">Ghost</div>
                         <br>
                         <div class="job">Frontend</div>
@@ -111,7 +111,7 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <div class="fakeimage">image</div>
+                        <img class="profileimage" src="Images/Deni.webp">
                         <div class="name">PlayerPlus591</div>
                         <br>
                         <div class="job">Frontend</div>
