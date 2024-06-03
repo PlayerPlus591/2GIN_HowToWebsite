@@ -115,7 +115,7 @@
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/Deni.webp">
                         <div class="name">PlayerPlus591</div>
-                        <p>"Nigger"</p>
+                        <p>"Russian soldiers are outside my house"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
