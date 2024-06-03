@@ -1,3 +1,6 @@
+
+<!-- Bameninhong - Lou -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,12 +23,7 @@
                 <div class="row">
                     <div class="navleft">
                         <a class="active" href="index.php">Home</a>
-                        <a href="#server">Server</a>
-                        <a href="#html">HTML</a>
-                        <a href="#php">PHP</a>
-                        <a href="#mysql">MySQL</a>
-                        <a href="#forum">Forum</a>
-                        <a href="#about">About</a>
+                        <a href="Includes/templatedot.php">Cours</a>
                     </div>
                     <div class="navright">
                         <a href="Includes/register.php">Sign up</a>
@@ -97,7 +95,7 @@
                 <div class="row">
 
                     <div class="profilecolumn">
-                        <div class="fakeimage">image</div>
+                        <img class="fakeimage" src="Images/flep-high.webp">
                         <div class="name">Pedro</div>
                         <br>
                         <div class="job">Frontend</div>
