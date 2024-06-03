@@ -10,7 +10,7 @@
 
 <!--This mf cooked: Filipe-->
 
-<!--Deni Code nigga-->
+<!--Deni Code-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
