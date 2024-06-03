@@ -97,6 +97,7 @@
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/flep-high.webp">
                         <div class="name">Pedro</div>
+                        <p>"Did you wash your ass today?"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
@@ -105,6 +106,7 @@
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/ghost.webp">
                         <div class="name">Ghost</div>
+                        <p>"Haal deng Maul!"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
@@ -113,14 +115,16 @@
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/Deni.webp">
                         <div class="name">PlayerPlus591</div>
+                        <p>"Nigger"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
                     </div>
                     
                     <div class="profilecolumn">
-                        <div class="fakeimage">image</div>
+                        <img class="profileimage" src="Images/Alex.webp">
                         <div class="name">Alexandro</div>
+                        <p>"Waat soll ech maachen?"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
