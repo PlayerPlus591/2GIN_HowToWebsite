@@ -114,8 +114,8 @@
                     
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/Deni.webp">
-                        <div class="name">PlayerPlus591</div>
-                        <p>"Russian soldiers are outside my house"</p>
+                        <div class="name">Deni</div>
+                        <p>"PlayerPlus591"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
