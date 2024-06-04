@@ -21,9 +21,13 @@ form {
     /* border: 3px solid #737373; */
 }
 
+.button {
+    width: 15px;
+}
+
 .window {
-    width: 400px;
-    max-width: auto;
+    width: 50%;
+    height: 320px;
     margin: auto;
 }
 
@@ -31,6 +35,17 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 20px;
+}
+
+.title-bar-text {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title-bar-controls {
+    min-height: 12px;
 }
 
 .window-body {
