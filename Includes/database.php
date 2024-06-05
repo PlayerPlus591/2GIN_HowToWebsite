@@ -3,9 +3,9 @@
 <?php
 
 $hostName= "localhost";
-$dbUser = "root";
-$dbPassword = '';
-$dbName = "login_register";
+$dbUser = "H2W_User";
+$dbPassword = "h2wpw";
+$dbName = "dbHow2Website";
 //connection sends a true or false
 $connection = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 if(!$connection){
