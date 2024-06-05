@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!--Deni Code-->
     <link rel="stylesheet" href="https://unpkg.com/98.css"> <!--Deni Code-->
+    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!--Deni Code-->
 
 </head>
 <body>
@@ -77,43 +77,46 @@
         ?>
 
         <form action="register.php" method="post"> <!--Deni & Filip Code-->
-            <div class="window" style="width: 400px">
+            <div class="window" style="height: 480px;">
                 <div class="title-bar">
-                  <div class="title-bar-text">Register</div>
-                  <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Maximize"></button>
-                    <button aria-label="Close"></button>
-                  </div>
+                    <div class="title-bar-img">
+                        <img src="https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-1.png" alt="login Picture">
+                    </div>
+                    <div class="title-bar-text">Register</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
                 </div>
                 <div class="window-body">
-                    <p style="text-align: left; margin-top: 1px">Full Name:</p>
+                    <p style="text-align: left; margin-top: 1px; font-size: 18px; margin-bottom: 5px">Full Name:</p>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
+                        <input type="text" class="form-control" name="fullname" placeholder="Full Name:" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                     </div>
     
-                    <p style="text-align: left;">Email:</p>
+                    <p style="text-align: left; font-size: 18px; margin-bottom: 5px">Email:</p>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" placeholder="Email:">
+                        <input type="email" class="form-control" name="email" placeholder="Email:" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                     </div>
 
-                    <p style="text-align: left;">Password:</p>
+                    <p style="text-align: left; font-size: 18px; margin-bottom: 5px">Password:</p>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" placeholder="Password:">
+                        <input type="password" class="form-control" name="password" placeholder="Password:" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                     </div>
 
-                    <p style="text-align: left;">Repeat Password:</p>
+                    <p style="text-align: left; font-size: 18px; margin-bottom: 5px">Repeat Password:</p>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
+                        <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                     </div>
         
                     <div class="form-btn">
-                        <input type="submit" class="btn btn-primary" value="Register" name="submit">
+                        <input type="submit" class="btn btn-primary" value="Register" name="submit" style="padding: 18px; font-size: 18px; margin-top: 20px;">
                     </div>
                 </div>
             </div>
         </form>
-        <!--deni--><div><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
+        <!--deni--><div style="font-size: 15px;"><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
     </div>
 
 </body>

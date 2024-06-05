@@ -64,10 +64,12 @@
                         <div class="form-group">
                             <input type="email" placeholder="Enter Email:" name="email" class="form-control" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                         </div>
+
                         <p style="text-align: left; font-size: 18px; margin-bottom: 5px">Password:</p>
                         <div class="form-group">
                             <input type="password" placeholder="Enter Password:" name="password" class="form-control" style="padding: 15px; font-size: 15px; margin-top: 10px;">
                         </div>
+                        
                         <div class="form-btn">
                             <input type="submit" value="Login" name="login" class="btn btn-primary" style="padding: 18px; font-size: 18px; margin-top: 20px;">
                         </div>
