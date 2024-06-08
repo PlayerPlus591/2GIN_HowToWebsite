@@ -99,7 +99,7 @@
                     </div>
                   </div>
             </form>
-            <div style="font-size: 15px;"><p>No registered yet? <a href="register.php">Register here!</a></p></div>
+            <div style="font-size: 15px;"><p>Not registered yet? <a href="register.php">Register here!</a></p></div>
         </div>
     </body>
 </html>
