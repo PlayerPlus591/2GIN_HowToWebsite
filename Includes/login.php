@@ -15,9 +15,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!-- Lou -->
+        <link rel="icon" href="https://win98icons.alexmeub.com/icons/png/users_key-5.png" type="image/x-icon"> 
         <link rel="stylesheet" href="https://unpkg.com/98.css">
-        <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!-- Lou -->
+        <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css">
+
+        <!--Deni Code-->
+        <script>
+            function redirectToHome() {
+                console.log("Redirecting to home...");
+                window.location.href="../index.php";
+            }
+    
+            function toggleFullscreen() {
+                if (!document.fullscreenElement) { //if document isn't in fullscreen
+                    document.documentElement.requestFullscreen().catch(err => {
+                        //give error with the error message attached
+                        alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                    });
+                } else {
+                    if (document.exitFullscreen) {
+                        //document
+                        document.exitFullscreen();
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="container">
@@ -54,9 +76,10 @@
                       </div>
                       <div class="title-bar-text">Login</div>
                       <div class="title-bar-controls">
-                        <button class="button" aria-label="Minimize"></button>
-                        <button class="button" aria-label="Maximize"></button>
-                        <button class="button" aria-label="Close"></button>
+                        <!--Deni Code-->
+                        <button aria-label="Minimize" type="button" onclick="redirectToHome()"></button>
+                        <button aria-label="Maximize" type="button" onclick="toggleFullscreen()"></button>
+                        <button aria-label="Close" type="button" onclick="redirectToHome()"></button>
                       </div>
                     </div>
                     <div class="window-body">
