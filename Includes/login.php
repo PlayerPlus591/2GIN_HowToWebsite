@@ -15,7 +15,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
-        <link rel="icon" href="https://win98icons.alexmeub.com/icons/png/users_key-5.png" type="image/x-icon"> 
+        <link rel="icon" href="../Images/icons/users_key-5.png" type="image/x-icon"> 
         <link rel="stylesheet" href="https://unpkg.com/98.css">
         <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css">
 
@@ -72,7 +72,7 @@
                 <div class="window">
                     <div class="title-bar">
                       <div class="title-bar-img">
-                        <img src="https://win98icons.alexmeub.com/icons/png/users_key-5.png" alt="login Picture">
+                        <img src="../Images/icons/users_key-5.png" alt="login Picture">
                       </div>
                       <div class="title-bar-text">Login</div>
                       <div class="title-bar-controls">
