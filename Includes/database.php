@@ -1,7 +1,7 @@
 <!--Pedro Code-->
 
 <?php
-    $hostName= "localhost";
+    $hostName= "89.58.47.144";
     $dbUser = "H2W_User";
     $dbPassword = "h2wpw";
     $dbName = "dbHow2Website";
