@@ -70,11 +70,19 @@
             }
 
             require_once "database.php";
-            $sql = "SELECT * FROM users WHERE dtEmail = '$email'";
-            $result = mysqli_query($connection,$sql);
-            $rowCount = mysqli_num_rows($result);
-            if($rowCount>0){
-                array_push($errors,"Email already exists!");
+
+            $sql = "SELECT * FROM users WHERE dtEmail = ?";
+            $stmt = mysqli_stmt_init($connection);
+            if (!mysqli_stmt_prepare($stmt, $sql)) {
+             array_push($errors, "SQL error");
+            } else {
+                mysqli_stmt_bind_param($stmt, "s", $email);
+                mysqli_stmt_execute($stmt);
+                mysqli_stmt_store_result($stmt);
+                $rowCount = mysqli_stmt_num_rows($stmt);
+                if ($rowCount > 0) {
+                    array_push($errors, "Email already exists!");
+                }
             }
 
             //if errors array is empty, no informations are being put in the database
