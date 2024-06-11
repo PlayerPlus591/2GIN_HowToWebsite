@@ -1,14 +1,16 @@
 <!--Pedro Code-->
 
 <?php
+$hostName = "89.58.47.144";
+$dbUser = "H2W_User";
+$dbPassword = "h2wpw";
+$dbName = "dbHow2Website";
 
-$hostName= "localhost";
-$dbUser = "root";
-$dbPassword = '';
-$dbName = "login_register";
-//connection sends a true or false
+// Establish a connection to the database
 $connection = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
-if(!$connection){
-    die("Something went wrong");
+
+// Check if the connection was successful
+if (!$connection) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
