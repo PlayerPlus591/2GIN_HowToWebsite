@@ -1,0 +1,137 @@
+/* LOU */
+
+.topnav {
+    background-color: #1A4D2E;
+    overflow: hidden;
+    margin: 0px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    border: 1px solid #000000;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #1A4D2E;
+    color: white;
+  }
+
+  .navleft {
+    float: left;
+    width: 88%;
+  }
+
+  .navright {
+    float: left;
+    width: 12%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+}
+
+.canvas {
+    background-color: #4F6F52;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .card {
+    background-color: #E8DFCA;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+.topic, .exercise {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden; 
+}
+.topic > h2, .exercise > h3 {
+    background-color: #11CC00;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+.topic > h2:hover, .exercise > h3:hover {
+    background-color: #11CC00;
+    border-radius: 8px;
+}
+.content, .exercise-content {
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid #eee;
+    text-align: center; /* Center align the inner content */
+}
+
+ul {
+    line-height: 1.6;
+    padding: 0; /* Reset padding */
+    margin: 0 auto; /* Center the list */
+    width: 90%;
+}
+
+p, li {
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: left; /* Ensures text within paragraphs and list items is left-aligned */
+    font: Serif;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+  }
+
+  .maintitle {
+    background-color: #1A4D2E;
+    padding: 50px;
+    margin: 0px;
+  }
+
+h2 {
+    font-size: 30px;
+}
+
+.column {
+    width: 30%;
+    margin: 0;
+    float: left;
+}

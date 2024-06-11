@@ -4,6 +4,8 @@
   /* Main assembly */
   body {
     background-color: #d3d3d3;
+    padding: 0;
+    margin: 0;
   }
 
   h1 {
@@ -31,6 +33,8 @@
   /* Defining the canva class */
   .canvas {
     background-color: #4F6F52;
+    margin: 0px;
+    padding: 0px;
   }
 
   .description {
@@ -106,8 +110,7 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: white;
+    border: 1px solid #000000;
   }
   
   /* Add a color to the active/current link */

@@ -7,13 +7,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>How To Website - Homepage</title>
+        <title>HowToWebsite - Homepage</title>
         <link rel="stylesheet" href="CSS/mainpage.css">
     </head>
-
-    <?php
-    
-    ?>
 
     <body>
         <header>
@@ -23,7 +19,9 @@
                 <div class="row">
                     <div class="navleft">
                         <a class="active" href="index.php">Home</a>
-                        <a href="Includes/templatedot.php">Cours</a>
+                        <a href="Includes/templatedot.php">Course</a>
+                        <a href="Includes/userDashboard.php">Dashboard</a>
+                        <a href="Includes/discussion.php">Forum</a>
                     </div>
                     <div class="navright">
                         <a href="Includes/register.php">Sign up</a>

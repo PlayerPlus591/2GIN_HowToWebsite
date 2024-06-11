@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!--Deni Code-->
+    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!--Lou Code-->
     <link rel="stylesheet" href="https://unpkg.com/98.css"> <!--Deni Code-->
 
 </head>
