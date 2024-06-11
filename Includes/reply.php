@@ -8,16 +8,16 @@
   <button class="reply" onclick="reply(<?php echo $nested_reply_id; ?>, '<?php echo htmlspecialchars($reply_data['name'], ENT_QUOTES, 'UTF-8'); ?>');">Reply</button>
   
   <?php
-  // Fetch and display nested replies
-  $nested_replies = mysqli_query($connection, "SELECT * FROM tb_data WHERE reply_id = $nested_reply_id");
-  if (mysqli_num_rows($nested_replies) > 0) {
-    echo '<div class="replies">';
-    while ($nested_reply_data = mysqli_fetch_assoc($nested_replies)) {
-      // Include the reply.php to render nested replies
-      include 'reply.php';
+    // Fetch and display nested replies
+    $nested_replies = mysqli_query($connection, "SELECT * FROM tb_data WHERE reply_id = $nested_reply_id");
+    if (mysqli_num_rows($nested_replies) > 0) {
+      echo '<div class="replies">';
+      while ($nested_reply_data = mysqli_fetch_assoc($nested_replies)) {
+        // Include the reply.php to render nested replies
+        include 'reply.php';
+      }
+      echo '</div>';
     }
-    echo '</div>';
-  }
   ?>
-
-
+</div>
+<?php endif; ?>
