@@ -24,6 +24,9 @@
         const title = document.getElementById('title');
         title.innerHTML = "Reply to " + name;
         document.getElementById('reply_id').value = id;
+        
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
 </body>
@@ -68,6 +71,10 @@ if (isset($_POST["submit"])) {
     if (!$stmt->execute()) {
         die("Error executing query: " . $stmt->error);
     }
+
+    // Redirect to the same page to prevent form resubmission
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit;
 }
 
 // Fetch and display comments
@@ -77,4 +84,3 @@ while ($data = mysqli_fetch_assoc($datas)) {
     include 'comment.php';
 }
 ?>
-
