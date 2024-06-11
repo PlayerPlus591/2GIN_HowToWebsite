@@ -76,7 +76,7 @@ body {
     overflow: hidden; 
 }
 .topic > h2, .exercise > h3 {
-    background-color: #11CC00;
+    background-color: #4F6F52;
     border-radius: 8px;
     color: #ffffff;
     margin: 0;
@@ -87,7 +87,7 @@ body {
     text-align: center;
 }
 .topic > h2:hover, .exercise > h3:hover {
-    background-color: #11CC00;
+    background-color: #4F6F52;
     border-radius: 8px;
 }
 .content, .exercise-content {

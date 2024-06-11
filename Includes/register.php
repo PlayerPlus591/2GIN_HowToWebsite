@@ -17,7 +17,7 @@
     <title>Registration Form</title>
     <link rel="icon" href="../Images/icons/network_internet_pcs_installer-1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
-    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css">
+    <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!-- Lou Code -->
 
     <!--Deni Code-->
     <script>
