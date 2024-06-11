@@ -25,18 +25,15 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <div class="canvas">
-                                
-                <div class="maintitle">
+            <div class="maintitle">
                     <h1>Course</h1>
                 </div>
                 
                 <br>
                 <br>
-                <div class="row">
-                    <div class="column">
+        </header>
+        <main>
+            <div class="canvas">
                         <div class="card">
                             <h2>1. Ubuntu Server installation</h2>
                             <div class="content" style="display: block;">
@@ -64,8 +61,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="column">
+
                         <div class="card">
                             <h2>2. Ubuntu server setup</h2>
                             <div class="content" style="display: block;">
@@ -96,8 +92,8 @@
                                 <br>
                             </div>
                         </div>
-                    </div>
-                </div>
+                   
+                
             </div>
         </main>
     </body>
