@@ -1,4 +1,5 @@
 <!--Filipe-->
+<link rel="stylesheet" href="../CSS/comment.css">
 <div class="comment">
   <h4><?php echo htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8'); ?></h4>
   <p><?php echo htmlspecialchars($data['date'], ENT_QUOTES, 'UTF-8'); ?></p>

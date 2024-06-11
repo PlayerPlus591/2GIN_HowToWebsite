@@ -5,9 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion page</title>
-    <link rel="stylesheet" href="../CSS/Comments.css">
+    <link rel="stylesheet" href="../CSS/discussions.css">
 </head>
 <body>
+
+    <!--Lou-->
+    <header>
+        <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
+
+        <div class="topnav">
+            <div class="row">
+                <div class="navleft">
+                    <a href="../index.php">Home</a>
+                    <a href="templatedot.php">Course</a>
+                    <a href="userDashboard.php">Dashboard</a>
+                    <a href="discussion.php">Forum</a>
+                </div>
+                <div class="navright">
+                    <a href="register.php">Sign up</a>
+                    <a href="login.php">Log in</a>  
+                </div>
+            </div>
+        </div>
+        <div class="maintitle">
+            <h1>Forum</h1>
+        </div>
+    </header>
+
+<br>
 <div class="container">
     <form action="" method="post">
         <h3 id="title">Leave a Comment</h3>
@@ -39,6 +64,7 @@ require_once "database.php";
 function renderReplies($reply_id, $connection) {
     $replies = mysqli_query($connection, "SELECT * FROM tb_data WHERE reply_id = $reply_id");
     if (mysqli_num_rows($replies) > 0) {
+        echo '<div class="card">';
         echo '<div class="replies">';
         while ($reply_data = mysqli_fetch_assoc($replies)) {
             echo '<div class="reply">';
@@ -50,6 +76,7 @@ function renderReplies($reply_id, $connection) {
             renderReplies($reply_data['id'], $connection);
             echo '</div>';
         }
+        echo '</div>';
         echo '</div>';
     }
 }
