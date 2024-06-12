@@ -112,7 +112,7 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/Deni.webp">
+                        <img class="profileimage" src="Images/pfp/S-591_Pistol.png">
                         <div class="name">Deni</div>
                         <p>"PlayerPlus591"</p>
                         <br>
