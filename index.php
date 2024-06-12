@@ -97,8 +97,9 @@
                         <div class="name">Pedro</div>
                         <p>"PEDRO PEDRO PEDRO"</p>
                         <br>
-                        <div class="job">Frontend</div>
-                        <div class="job">Design</div>
+                        <div class="job">Backend</div>
+                        <div class="job">MySQL</div>
+                        <div class="job">Content</div>
                     </div>
                     
                     <div class="profilecolumn">
@@ -115,8 +116,8 @@
                         <div class="name">Deni</div>
                         <p>"PlayerPlus591"</p>
                         <br>
-                        <div class="job">Frontend</div>
-                        <div class="job">Design</div>
+                        <div class="job">Backend</div>
+                        <div class="job">MySQL</div>
                     </div>
                     
                     <div class="profilecolumn">
@@ -124,8 +125,8 @@
                         <div class="name">Alexandro</div>
                         <p>"ALALALALALABAMBA"</p>
                         <br>
-                        <div class="job">Frontend</div>
-                        <div class="job">Design</div>
+                        <div class="job">Backend</div>
+                        <div class="job">Content</div>
                     </div>
                 </div>
 
