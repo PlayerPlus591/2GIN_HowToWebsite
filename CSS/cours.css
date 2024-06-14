@@ -1,6 +1,7 @@
 /* LOU */
 
-.topnav {
+  /* Add a black background color to the top navigation */
+  .topnav {
     background-color: #1A4D2E;
     overflow: hidden;
     margin: 0px;
@@ -14,11 +15,14 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 10px;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
+    border-radius: 0px;
+    box-shadow: inset 0 0 0 2px black;
   }
   
   /* Add a color to the active/current link */

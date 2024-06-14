@@ -13,11 +13,12 @@
     <body>
         <header>
             <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
+            
             <div class="topnav">
                 <div class="row">
                     <div class="navleft">
                         <a href="../index.php">Home</a>
-                        <a class="active" href="templatedot.php">Course</a>
+                        <a class="active" href="templatedot.php" style="background-color: #E8DFCA; color: black;">Course</a>
                         <a href="userDashboard.php">Dashboard</a>
                         <a href="discussion.php">Forum</a>
                     </div>

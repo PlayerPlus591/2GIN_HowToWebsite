@@ -24,7 +24,7 @@
                 <div class="navleft">
                     <a class="active" href="../index.php">Home</a>
                     <a href="../Includes/templatedot.php">Course</a>
-                    <a href="../Includes/userDashboard.php" style="background-color: #32CD32;">Dashboard</a>
+                    <a href="../Includes/userDashboard.php" style="background-color: #E8DFCA; color: black;">Dashboard</a>
                     <a href="../Includes/discussion.php">Forum</a>
                 </div>
 

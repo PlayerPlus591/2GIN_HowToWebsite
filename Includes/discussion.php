@@ -19,7 +19,7 @@
                     <a href="../index.php">Home</a>
                     <a href="templatedot.php">Course</a>
                     <a href="userDashboard.php">Dashboard</a>
-                    <a href="discussion.php">Forum</a>
+                    <a href="discussion.php" style="background-color: #E8DFCA; color: black;">Forum</a>
                 </div>
                 <div class="navright">
                     <a href="register.php">Sign up</a>
