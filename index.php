@@ -90,7 +90,7 @@
                 <br>
                 <br>
 
-                <div class="row">
+                <div class="row" style="justify-content: center; display: flex;">
 
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/flep-high.webp">
@@ -116,7 +116,7 @@
                         <div class="name">Deni</div>
                         <p>"PlayerPlus591"</p>
                         <br>
-                        <div class="job">Backend</div>
+                        <div class="job">Backend/Frontend</div>
                         <div class="job">MySQL</div>
                     </div>
                     
@@ -129,7 +129,6 @@
                         <div class="job">Content</div>
                     </div>
                 </div>
-
                 <br>
                 <br>
 
