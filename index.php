@@ -138,9 +138,9 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/Alex.webp">
+                        <img class="profileimage" src="Images\alexprof.jpg">
                         <div class="name">Alexandro</div>
-                        <p>"ALALALALALABAMBA"</p>
+                        <p>"Hallo Polen"</p>
                         <br>
                         <div class="job">Backend</div>
                         <div class="job">Content</div>
