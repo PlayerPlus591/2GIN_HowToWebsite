@@ -53,15 +53,6 @@
                                     <li> Select available RAM and CPU cores (4,6 GB & 3 CPU Cores)</li>
                                     <li> Select available space (25 Gb)</li>
                                 </ul>
-                                <p>:></p>
-                                <br>
-                                <div class="exercise" style="width: 100%;">
-                                    <h3>Ex. 1</h3>
-                                    <div class="exercise-content" style="display: none;">
-                                        <p>:<</p>
-                                        <br>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -95,7 +86,119 @@
                                 <br>
                             </div>
                         </div>
-                   
+
+                        <div class="card">
+                            <h2>3. Visual Studio Code Connection with Server:</h2>
+                            <br>
+                            <div class="content" style="display: block;">
+                            <ul>
+                                <li>go to the official <a href="https://code.visualstudio.com/" target="”_blank”"> VS-Code website</a> and download the preferred installer</li>
+                                <li>After installing, this UI should pop up: *picture of VS Code*</li>
+                            </ul>
+                            <br>
+                            <h4>Set up SSH Connection to Linux Server:</h4>
+                            <ul>
+                                <li> Open up Visual Studio again</li>
+                                <li> Go to extensions and install "Remote - SSH" by Microsoft"</li>
+                                <li> Now press F1 and enter "Remote-SSH: Open Configuration File"</li>
+                                <li> Select the file and your editor will open the config file.</li>
+                                <li>Host Example_Server_123 (Alias)
+                                    <br>
+                                    HostName 192.168.1.XXX (The current Server's IP Adress)
+                                    <br>
+                                    User example_user_123 (The Server's username)
+                                    <br>
+                                    IdentityFile /home/example_user_123/.ssh/authorized_keys</li>
+                                    <li> To add a public key, open up the command prompt of your local computer</li>
+                                    <li> enter: ssh example_user_123@192.168.1.XXX</li>
+                                    <li> after logging in, enter: nano ~/.ssh/authorized_keys</li>
+                                    <li> inside, enter this line of code and then save</li>
+                                    <li> chmod 700 ~/.ssh
+                                        <br>
+                                        chmod 600 ~/.ssh/authorized_keys</li>
+                                        <li> After saving press F1 again and enter "Remote-SSH: Connect to Host"</li>
+                                        <li> Select the file and your editor will open another window</li>
+                                        <li> It will ask what OS the server uses (Linux)</li>
+                                        <li> then click continue, inside the console, enter the server's Password and then wait</li>
+                                        <li> It will take a bit time until VS Code completely connects to the Linux Server</li>
+                                        <li> To open files from the server, you can open file like always in VS code</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2>4. GitHub Connection to VS Code</h2>
+                            <div class="content" style="display: block;">
+                            <ul>
+                                <li> Go to GitHub's website and sign in</li>
+                                <li> inside click "New repository"</li>
+                                <li> Choose a Repository name, select Public or Private, Add a README file</li>
+                                <li> After creating a repository, go to VS Code</li>
+                                <li> connect with VM Server via SSH again if necessary</li>
+                                <li> to give permisson, enter this line into the terminal inside VS Code (when connected to Server)
+                                    <br>
+                                    sudo chown example_user_123 /var/www/html
+                                    <br>
+                                    (example_user_123 is the server's user name)</li>
+                                    <li> Click on view -> Source Control or click directly on the third icon on the left</li>
+                                    <li> Click on clone repository and connect your GitHub with VS Code</li>
+                                    <li> After that, choose the repository you want to clone</li>
+                                </ul>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2>5. Making a html page</h2>
+                            <div class="content" style="display: block;">
+                            <ul>
+                                <li> Open VS Code and create a new .html file named index (index.html) inside /var/www/html</li>
+                                <li> sudo chmod index.html to give rights to save the file</li>
+                                <li> This is a basic template, for a more detailed look at html, visit: 
+                                    <br>
+                                    <a href="https://www.w3schools.com/html/default.asp" target="”_blank”"> https://www.w3schools.com/html/default.asp</a></li>
+                                </ul>
+                                <br> 
+                                <div class="exercise" style="width: 100%;">
+                                    <h3>Example </h3>
+                                    <div class="exercise-content" style="display: none;">
+                                        <pre><code> &lt;!DOCTYPE html&gt;                                                                           </code></pre>
+                                        <pre><code>     &lt;html lang="en"&gt;                                                                      </code></pre>
+                                        <pre><code>         &lt;head&gt;                                                                            </code></pre>
+                                        <pre><code>             &lt;meta charset="UTF-8"&gt;                                                        </code></pre>
+                                        <pre><code>             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;        </code></pre>
+                                        <pre><code>             &lt;title&gt;My Webpage&lt;/title&gt;                                               </code></pre>
+                                        <pre><code>         &lt;/head&gt;                                                                           </code></pre>
+                                        
+                                        <pre><code>         &lt;body&gt;                                                                            </code></pre>
+                                        <pre><code>             &lt;header&gt;                                                                      </code></pre>
+                                        <pre><code>                 &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;                                      </code></pre>
+                                        <pre><code>             &lt;/header&gt;                                                                     </code></pre>
+                                        
+                                        <pre><code>             &lt;nav&gt;                                                                         </code></pre>
+                                        <pre><code>                 &lt;ul&gt;                                                                      </code></pre>
+                                        <pre><code>                     &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;                       </code></pre>
+                                        <pre><code>                     &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;                      </code></pre>
+                                        <pre><code>                     &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;                    </code></pre>
+                                        <pre><code>                 &lt;/ul&gt;                                                                     </code></pre>
+                                        <pre><code>             &lt;/nav&gt;                                                                        </code></pre>
+                                
+                                        <pre><code>             &lt;main&gt;                                                                        </code></pre>
+                                        <pre><code>                 &lt;section&gt;                                                                 </code></pre>
+                                        <pre><code>                     &lt;h2&gt;About Me&lt;/h2&gt;                                               </code></pre>
+                                        <pre><code>                     &lt;p&gt;This is where you can provide information about yourself.&lt;/p&gt;</code></pre>
+                                        <pre><code>                 &lt;/section&gt;                                                                </code></pre>
+                                        <pre><code>             &lt;/main&gt;                                                                       </code></pre>
+
+                                        <pre><code>             &lt;footer&gt;                                                                      </code></pre>
+                                        <pre><code>                 &lt;p&gt;&copy; 2024 My Webpage&lt;/p&gt;                                       </code></pre>
+                                        <pre><code>             &lt;/footer&gt;                                                                     </code></pre>
+                                        <pre><code>         &lt;/body&gt;                                                                           </code></pre>
+                                        <pre><code>    &lt;/html&gt;                                                                                </code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 
             </div>
         </main>
