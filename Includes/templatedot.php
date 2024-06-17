@@ -1,5 +1,43 @@
 <!-- Alexandro x Lou -->
 
+<?php
+    /*Lou */
+    session_start();
+    if(!isset($_SESSION["user"]))
+    {   
+        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
+        echo '<div class="topnav">';
+        echo '<div class="row">';
+        echo '<div class="navleft">';
+        echo '<a href="../index.php">Home</a>';
+        echo '<a class="active" href="templatedot.php">Course</a>';
+        echo '<a href="userDashboard.php">Dashboard</a>';
+        echo '<a href="discussion.php">Forum</a>';
+        echo '</div>';
+        echo '<div class="navright">';
+        echo '<a href="register.php">Sign up</a>';
+        echo '<a href="login.php">Log in</a>';  
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }else {
+        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
+        echo '<div class="topnav">';
+        echo '<div class="row">';
+        echo '<div class="navleft">';
+        echo '<a href="../index.php">Home</a>';
+        echo '<a class="active" href="templatedot.php">Course</a>';
+        echo '<a href="userDashboard.php">Dashboard</a>';
+        echo '<a href="discussion.php">Forum</a>';
+        echo '</div>';
+        echo '<div class="navright">';
+        echo '<a href="logout.php">Log-out</a>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,22 +50,6 @@
     ?>
     <body>
         <header>
-            <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
-            
-            <div class="topnav">
-                <div class="row">
-                    <div class="navleft">
-                        <a href="../index.php">Home</a>
-                        <a class="active" href="templatedot.php" style="background-color: #E8DFCA; color: black;">Course</a>
-                        <a href="userDashboard.php">Dashboard</a>
-                        <a href="discussion.php">Forum</a>
-                    </div>
-                    <div class="navright">
-                        <a href="register.php">Sign up</a>
-                        <a href="login.php">Log in</a>  
-                    </div>
-                </div>
-            </div>
             <div class="maintitle">
                     <h1>Course</h1>
                 </div>

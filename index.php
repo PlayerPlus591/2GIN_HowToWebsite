@@ -1,6 +1,44 @@
 <!-- Bameninhong - Lou -->
 
 <!DOCTYPE html>
+
+<?php
+    session_start();
+    if(!isset($_SESSION["user"]))
+    {   
+        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
+        echo '<div class="topnav">';
+        echo '<div class="row">';
+        echo '<div class="navleft">';
+        echo '<a class="active" href="index.php">Home</a>';
+        echo '<a href="Includes/templatedot.php">Course</a>';
+        echo '<a href="Includes/userDashboard.php">Dashboard</a>';
+        echo '<a href="Includes/discussion.php">Forum</a>';
+        echo '</div>';
+        echo '<div class="navright">';
+        echo '<a href="Includes/register.php">Sign up</a>';
+        echo '<a href="Includes/login.php">Log in</a>';  
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }else {
+        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
+        echo '<div class="topnav">';
+        echo '<div class="row">';
+        echo '<div class="navleft">';
+        echo '<a class="active" href="index.php" style="background-color: #E8DFCA; color: black;">Home</a>';
+        echo '<a href="Includes/templatedot.php">Course</a>';
+        echo '<a href="Includes/userDashboard.php">Dashboard</a>';
+        echo '<a href="Includes/discussion.php">Forum</a>';
+        echo '</div>';
+        echo '<div class="navright">';
+        echo '<a href="Includes/logout.php">Log-out</a>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }
+?>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -10,25 +48,6 @@
     </head>
 
     <body>
-        <header>
-            <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>
-
-            <div class="topnav">
-                <div class="row">
-                    <div class="navleft">
-                        <a class="active" href="index.php" style="background-color: #E8DFCA; color: black;">Home</a>
-                        <a href="Includes/templatedot.php">Course</a>
-                        <a href="Includes/userDashboard.php">Dashboard</a>
-                        <a href="Includes/discussion.php">Forum</a>
-                    </div>
-                    <div class="navright">
-                        <a href="Includes/register.php">Sign up</a>
-                        <a href="Includes/login.php">Log in</a>  
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <main>
             <div class="canvas">
                 

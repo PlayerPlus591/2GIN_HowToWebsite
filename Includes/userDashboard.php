@@ -22,9 +22,9 @@
         <div class="topnav">
             <div class="row">
                 <div class="navleft">
-                    <a class="active" href="../index.php">Home</a>
+                    <a href="../index.php">Home</a>
                     <a href="../Includes/templatedot.php">Course</a>
-                    <a href="../Includes/userDashboard.php" style="background-color: #E8DFCA; color: black;">Dashboard</a>
+                    <a class="active" href="../Includes/userDashboard.php">Dashboard</a>
                     <a href="../Includes/discussion.php">Forum</a>
                 </div>
 

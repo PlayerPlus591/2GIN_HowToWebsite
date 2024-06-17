@@ -6,8 +6,7 @@
     overflow: hidden;
     margin: 0px;
   }
-  
-  /* Style the links inside the navigation bar */
+
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -22,15 +21,22 @@
   .topnav a:hover {
     /*border: 1px solid #000000;*/
     border-radius: 0px;
-    box-shadow: inset 0 0 0 2px black;
+    box-shadow: 1px solid black;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #1A4D2E;
-    color: white;
+    background-color: #E8DFCA;
+    color: black;
   }
 
+  /* Defines a column */
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Defines a column in the navbar */
   .navleft {
     float: left;
     width: 88%;
