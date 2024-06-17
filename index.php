@@ -119,7 +119,7 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/image.alexprof.jpg">
+                        <img class="profileimage" src="Images\alexprof.webp.jpg">
                         <div class="name">Alexandro</div>
                         <p>"ALALALALALABAMBA"</p>
                         <br>
