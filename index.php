@@ -110,13 +110,12 @@
                 <div class="row" style="justify-content: center; display: flex;">
 
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/flep-high.webp">
+                        <img class="profileimage" src="Images/Flep.webp">
                         <div class="name">Pedro</div>
-                        <p>"PEDRO PEDRO PEDRO"</p>
+                        <p>"Hard at work? More like work while hard"</p>
                         <br>
-                        <div class="job">Backend</div>
                         <div class="job">MySQL</div>
-                        <div class="job">Content</div>
+                        <div class="job">False Information</div>
                     </div>
                     
                     <div class="profilecolumn">
