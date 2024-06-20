@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion page</title>
     <link rel="stylesheet" href="../CSS/discussions.css">
+    <script src="../JS/discussionScroll.js"></script>
 </head>
 <body>
 
@@ -71,16 +72,6 @@ if (!isset($_SESSION["user"])) {
     <?php endif; ?>
 </div>
 
-<script>
-    function reply(id, name) {
-        const title = document.getElementById('title');
-        title.innerHTML = "Reply to " + name;
-        document.getElementById('reply_id').value = id;
-
-        // Scroll to the top of the page
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
 </body>
 </html>
 
