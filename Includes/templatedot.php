@@ -36,6 +36,9 @@
         echo '</div>';
         echo '</div>';
     }
+
+    $currentPage = 'templatedot.php';
+    $nextPage = 'lexidea.php';
 ?>
 
 <!DOCTYPE html>
@@ -219,6 +222,13 @@
                                         <pre><code>    &lt;/html&gt;                                                                                </code></pre>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="navigation-buttons">
+                                <a href="<?php echo $nextPage; ?>" class="button">Previous</a>
+                                <a href="<?php echo $currentPage; ?>" class="button">Next</a>
                             </div>
                         </div>
                 
