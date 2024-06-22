@@ -71,9 +71,31 @@ form {
     cursor: pointer;
 }
 
+.form-btn button {
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
 /*.form-btn input:hover {background-color: #0056b3;}*/
 
 .alert {
     color: red;
     margin-bottom: 15px;
+}
+
+/* CHANGES FOR MOBILE DEVICES */
+
+@media screen and (max-width: 768px) {
+    .window {
+        width: 100%;
+    }
+
+    .form-btn button {
+        width: 100%;
+    }
 }

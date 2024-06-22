@@ -1,6 +1,6 @@
 <!--Deni Code-->
 
-<?php
+<input?php
     session_start();
     if(isset($_SESSION["user"]))
     {
@@ -99,7 +99,11 @@
                     </div>
                   </div>
             </form>
-            <div style="font-size: 15px;"><p>Not registered yet? <a href="register.php">Register here!</a></p></div>
+            <div class="form-btn" style="font-size: 15px;">
+                <button onclick="location.href = 'register.php';" class="btn btn-primary">Register</button>
+                <br>
+                <button onclick="location.href = '../index.php';" class="btn btn-primary">Back</button>
+            </div>
         </div>
     </body>
 </html>

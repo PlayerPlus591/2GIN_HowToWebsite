@@ -1,36 +1,42 @@
 <!-- Alexandro x Lou -->
 
 <?php
-    /*Lou */
+    /*Lou & Deni*/
     session_start();
     if(!isset($_SESSION["user"]))
     {   
-        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
-        echo '<div class="topnav">';
-        echo '<div class="row">';
+        echo '<input onclick="toggleNav()" type="checkbox" id="nav_check" hidden>';
+        echo '<label for="nav_check" class="hamburger" id="hamburger">';
+        echo '<span>M</span><span>E</span><span>N</span><span>U</span>';
+        echo '</label>';
+        echo '<p class="welcome">Welcome to our website</p>';
+        echo '<div id="mySidenav" class="topnav">';
+        echo '<div class="navrow">';
         echo '<div class="navleft">';
+        echo '<h2>HowToWebsite</h2>';
         echo '<a href="../index.php">Home</a>';
         echo '<a class="active" href="templatedot.php">Course</a>';
         echo '<a href="userDashboard.php">Dashboard</a>';
         echo '<a href="discussion.php">Forum</a>';
-        echo '</div>';
-        echo '<div class="navright">';
         echo '<a href="register.php">Sign up</a>';
         echo '<a href="login.php">Log in</a>';  
         echo '</div>';
         echo '</div>';
         echo '</div>';
     }else {
-        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
-        echo '<div class="topnav">';
-        echo '<div class="row">';
+        echo '<input onclick="toggleNav()" type="checkbox" id="nav_check" hidden>';
+        echo '<label for="nav_check" class="hamburger" id="hamburger">';
+        echo '<span>M</span><span>E</span><span>N</span><span>U</span>';
+        echo '</label>';
+        echo '<p class="welcome">Welcome to our website</p>';
+        echo '<div id="mySidenav" class="topnav">';
+        echo '<div class="navrow">';
         echo '<div class="navleft">';
+        echo '<h2>HowToWebsite</h2>';
         echo '<a href="../index.php">Home</a>';
         echo '<a class="active" href="templatedot.php">Course</a>';
         echo '<a href="userDashboard.php">Dashboard</a>';
         echo '<a href="discussion.php">Forum</a>';
-        echo '</div>';
-        echo '<div class="navright">';
         echo '<a href="logout.php">Log-out</a>';
         echo '</div>';
         echo '</div>';
@@ -43,22 +49,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>How to Website - Course</title>
         <link rel="stylesheet" href="../CSS/cours.css">
-        <title>How to Website</title>
-    </head>
-    <?php
-    ?>
-    <body>
-        <header>
-            <div class="maintitle">
-                    <h1>Course</h1>
-                </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.left = "0px";
+                document.getElementById("hamburger").style.height = "30vw";
+
+                // Get all span elements inside the hamburger
+                const spans = document.querySelectorAll("#hamburger span");
                 
-                <br>
-                <br>
-        </header>
+                // Set the line-height for each span
+                spans.forEach(span => {
+                  span.style.lineHeight = "1.5"; // Adjust this value as necessary
+                });
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.left = "-800px";
+                document.getElementById("hamburger").style.height = "20vw";
+
+                // Get all span elements inside the hamburger
+                const spans = document.querySelectorAll("#hamburger span");
+                
+                // Set the line-height for each span
+                spans.forEach(span => {
+                  span.style.lineHeight = "1"; // Adjust this value as necessary
+                });
+            }
+
+            function toggleNav() {
+                var sidenav = document.getElementById("mySidenav");
+                if (sidenav.style.left === "0px") {
+                    closeNav();
+                } else {
+                    openNav();
+                }
+            }
+        </script>
+    </head>
+
+    <body>
         <main>
             <div class="canvas">
+                <div class="maintitle">
+                    <h1>Course</h1>
+                </div>
+
+                <br><br>
+
                         <div class="card">
                             <h2>1. Ubuntu Server installation</h2>
                             <div class="content" style="display: block;">

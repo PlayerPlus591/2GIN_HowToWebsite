@@ -6,6 +6,25 @@
     {
         header("Location: login.php");
     }
+    else {
+        echo '<input onclick="toggleNav()" type="checkbox" id="nav_check" hidden>';
+        echo '<label for="nav_check" class="hamburger" id="hamburger">';
+        echo '<span>M</span><span>E</span><span>N</span><span>U</span>';
+        echo '</label>';
+        echo '<p class="welcome">Welcome to our website</p>';
+        echo '<div id="mySidenav" class="topnav">';
+        echo '<div class="navrow">';
+        echo '<div class="navleft">';
+        echo '<h2>HowToWebsite</h2>';
+        echo '<a href="../index.php">Home</a>';
+        echo '<a href="../Includes/templatedot.php">Course</a>';
+        echo '<a class="active" href="../Includes/userDashboard.php">Dashboard</a>';
+        echo '<a href="../Includes/discussion.php">Forum</a>';
+        echo '<a href="../Includes/logout.php">Log-out</a>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -13,28 +32,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
-    <link rel="stylesheet" href="../CSS/mainpage.css">
+    <title>HowToWebsite - Dashboard</title>
+    <link rel="stylesheet" href="../CSS/userDashboard.css">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0px";
+            document.getElementById("hamburger").style.height = "30vw";
+    
+            // Get all span elements inside the hamburger
+            const spans = document.querySelectorAll("#hamburger span");
+            
+            // Set the line-height for each span
+            spans.forEach(span => {
+              span.style.lineHeight = "1.5"; // Adjust this value as necessary
+            });
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-800px";
+            document.getElementById("hamburger").style.height = "20vw";
+    
+            // Get all span elements inside the hamburger
+            const spans = document.querySelectorAll("#hamburger span");
+            
+            // Set the line-height for each span
+            spans.forEach(span => {
+              span.style.lineHeight = "1"; // Adjust this value as necessary
+            });
+        }
+    
+        function toggleNav() {
+            var sidenav = document.getElementById("mySidenav");
+            if (sidenav.style.left === "0px") {
+                closeNav();
+            } else {
+                openNav();
+            }
+        }
+    </script>
 </head>
 <body>
-    <Header>
-        <p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to User Dashboard</p>
-        <div class="topnav">
-            <div class="row">
-                <div class="navleft">
-                    <a href="../index.php">Home</a>
-                    <a href="../Includes/templatedot.php">Course</a>
-                    <a class="active" href="../Includes/userDashboard.php">Dashboard</a>
-                    <a href="../Includes/discussion.php">Forum</a>
-                </div>
-
-                <div class="navright">
-                    <a href="../Includes/logout.php">Log-out</a>
-                </div>
-            </div>
-        </div>
-    </Header>
-
     <main>
     <div class="canvas">
         <div class="maintitle">
@@ -45,7 +82,7 @@
         <br>
     
         <div class="row">    
-            <div class="column" style="width: 30%;">
+            <div class="column">
                 <div class="card" style="display: flex; align-items: center;">
                     <img src="../Images/pfp/S-591_Pistol.png" style="border-radius: 50%; width: 80px; height: 80px; margin-right: 20px;" alt="user Picture">
                     <h2>Profile Placeholder</h2>
@@ -64,7 +101,7 @@
                 </div>
             </div>
     
-            <div class="column" style="width: 70%;">
+            <div class="column">
                 <div class="card">
                     <h2>Placeholder text</h2>
                     <ul>

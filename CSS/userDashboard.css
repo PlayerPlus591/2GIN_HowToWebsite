@@ -290,7 +290,7 @@ h1 {
     }
 
     .column { /*OVERVIEW and REQUIREMENTS*/
-        width: 90vw;
+        width: 100%;
     }
 
     .profilecolumn { /*CONTRIBUTORS COLUMNS*/
@@ -319,5 +319,11 @@ h1 {
     }
     h2 {
         font-size: 4vw; /* Relative font size based on viewport width */
+    }
+
+    .card {
+        margin: 3vw;
+        margin-bottom: 20px;
+        width: 90%;
     }
   }

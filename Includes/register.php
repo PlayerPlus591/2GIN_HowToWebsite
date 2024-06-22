@@ -136,7 +136,12 @@
                 </div>
             </div>
         </form>
-        <!--deni--><div style="font-size: 15px;"><p>Already registered? <a href="login.php">Log-in here!</a></p></div> <!--Deni Code-->
+        <!--deni--> 
+        <div class="form-btn" style="font-size: 15px;">
+            <button onclick="location.href = 'login.php';" class="btn btn-primary">Log-in</button>
+            <br>
+            <button onclick="location.href = '../index.php';" class="btn btn-primary">Back</button>
+        </div>
     </div>
 
 </body>

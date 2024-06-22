@@ -1,5 +1,5 @@
 /*Filipe*/
-*{
+  *{
     margin: 0px;
     padding: 0px;
   }
@@ -9,7 +9,7 @@
     padding: 0px;
   }
   .container{
-    background: #3f4441;
+    background: #E8DFCA;
     margin: 0 auto;
     padding-top: 1px;
     padding-bottom: 5px;
@@ -21,6 +21,12 @@
   }
   .reply{
     border: 2px solid #ccc;
+  }
+  .navrow {
+    display: flex;
+    width: auto; /* Adjust the container width or use auto to fill the width*/
+    /*justify-content: space-around;*/
+    margin: 0 auto; /* Center the row horizontally */
   }
 
   form{
@@ -63,20 +69,21 @@
   margin: 0px;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px; /*Resize padding according to viewport width (vw)*/
   text-decoration: none;
-  font-size: 17px;
   border-radius: 10px;
+  font-size: 20px; /* Adjust font size based on viewport width */
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   /*border: 1px solid #000000;*/
-  border-radius: 0px;
+  /*border-radius: 0px;*/
   box-shadow: 1px solid black;
 }
 
@@ -99,8 +106,22 @@
 }
 
 .navright {
-  float: left;
-  width: 12%;
+  /*float: left;
+  width: 12%;*/
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Distribute space evenly */
+  flex-wrap: nowrap; /* Prevent wrapping to ensure they stay on one line */
+}
+
+.navright a {
+  white-space: nowrap; /* Prevent text wrapping inside the links */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Clear floats after the columns */
@@ -112,13 +133,14 @@
 
 h1 {
   text-align: center;
-  font-size: 60px;
-  color: white;
-  margin: 0px;
+    font-size: 60px;
+    color: white;
+    margin: 0px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2vw; /* Relative font size based on viewport width */
 }
 
 p {
@@ -129,8 +151,8 @@ p {
 
 .maintitle {
   background-color: #1A4D2E;
-  padding: 50px;
-  margin: 0px;
+    padding: 5vh; /* Padding based on viewport height */
+    margin: 0px;
 }
 
 .card {
@@ -142,4 +164,154 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-color: black;
   border: 1px solid #000000;
+}
+
+.hamburger { /*Slide Menu Button only usable when using portrait scape devices such as smartphones*/
+  display: none;
+  position: fixed;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+
+  width: 10vw;
+  height: 20vw;
+  right: 5vw;
+  background: #E8DFCA;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger span {
+  text-align: center;
+  font-size: 5vw;
+  display: block;
+  line-height: 1; /* Adjust spacing between letters if necessary */
+}
+
+.welcome {
+  margin: 0px; 
+  padding-top: 10px;
+  background-color: #1A4D2E;
+  text-align: center; 
+  color: white;
+}
+
+.navleft h2 {
+  display: none;
+}
+
+/* CHANGES FOR MOBILE DEVICES */
+
+@media screen and (max-width: 768px) {
+
+  .topnav { /*TOP NAVIGATION LIKE Home, Register OR Forum*/
+      /*visibility: collapse;*/
+      display: flex;
+
+      position: fixed;
+      left: -800px;
+      top: 0;
+      z-index: 999;
+      width: 80vw;
+      height: 100vh;
+      background-color: #E8DFCA;
+      transition: 0.2s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .topnav a {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 60vw;
+    color: black;
+    background-color: #4F6F52;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .topnav a.active {
+    text-decoration: underline;
+    background-color: #1A4D2E;
+    color: white;
+  }
+
+  .navrow {
+    display: flex;
+    height: fit-content;
+  }
+
+  .navleft {
+    display: block;
+    width: 100%;
+  }
+
+  .navleft h2 {
+    display: block;
+    font-size: 40px;
+    margin-left: 3vw;
+    text-decoration: underline;
+    margin-top: 33.2px;
+    margin-bottom: 33.2px;
+  }
+
+  .navright {
+    display: block;
+
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger span {
+    line-height: 1; /* Adjust spacing between letters if necessary */
+    transition: 0.2s;
+  }
+
+  .maintitle { /*Main Title: HowToWebsite*/
+      padding: 40px;
+      background-color: #1A4D2E;
+  }
+
+  .row { /*OVERVIEW and REQUIREMENTS*/
+      flex-direction: column; /* Stack columns vertically */
+      width: 90vw; /* Full viewport width */
+      align-items: center; /* Center the columns */
+  }
+
+  .column { /*OVERVIEW and REQUIREMENTS*/
+      width: 90vw;
+  }
+
+  .profilecolumn { /*CONTRIBUTORS COLUMNS*/
+      width: 90vw; /* Each profile column takes 90% of the viewport width */
+      max-width: none; /* Remove the maximum width constraint */
+      margin: 10px 0; /* Add some margin between the columns */
+  }
+
+  .profileimage { /*CONTRIBUTORS PICTURES/IMAGES*/
+      max-width: none; /* Remove the maximum width constraint */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .reply {
+    padding: 3%;
+  }
+
+  .name {
+      font-size: 6vw; /* Adjust font size based on viewport width */
+  }
+  p, .job {
+      font-size: 4vw; /* Adjust font size based on viewport width */
+  }    
+
+  h1 {
+      text-align: center;
+      font-size: 10vw;
+      color: white;
+      margin: 0px;
+  }
+  h2 {
+      font-size: 4vw; /* Relative font size based on viewport width */
+  }
 }

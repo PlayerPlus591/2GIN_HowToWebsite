@@ -1,4 +1,148 @@
-/* LOU */
+/*Lou & Deni*/
+body {
+    margin: 0;
+    padding: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #1A4D2E;
+    overflow-x: hidden;
+}
+.welcome {
+    margin: 0px; 
+    padding-top: 10px;
+    background-color: #1A4D2E;
+    text-align: center; 
+    color: white;
+}
+.row {
+    display: flex;
+    width: 80vw; /* Adjust the container width or use auto to fill the width*/
+    justify-content: space-around;
+    margin: 0 auto; /* Center the row horizontally */
+}
+.navrow {
+    display: flex;
+    width: auto; /* Adjust the container width or use auto to fill the width*/
+    /*justify-content: space-around;*/
+    margin: 0 auto; /* Center the row horizontally */
+}
+
+.navleft h2 {
+  display: none;
+}
+
+.hamburger { /*Slide Menu Button only usable when using portrait scape devices such as smartphones*/
+  display: none;
+  position: fixed;
+  height: fit-content;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+
+  width: 10vw;
+  height: 20vw;
+  right: 5vw;
+  background: #E8DFCA;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hamburger span {
+  text-align: center;
+  font-size: 5vw;
+  display: block;
+  line-height: 1; /* Adjust spacing between letters if necessary */
+}
+
+.profilecolumn {
+    width: 20vw; /* Each profile column takes 20% of the viewport width */
+    background-color: #1A4D2E;
+    color: white;
+    text-align: center;
+    /*padding: 1vw;*/
+    box-sizing: border-box;
+
+    float: left;
+    border: 3px;
+
+    margin-left: 2%;
+    margin-right: 0px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.profileimage {
+    width: 100%; /* Image takes full width of the column */
+    height: auto;
+
+    background-color: gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.name {
+    font-size: 2vw; /* Adjust font size based on viewport width */
+}
+p, .job {
+    font-size: 1.5vw; /* Adjust font size based on viewport width */
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    margin: 0px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .maintitle {
+    background-color: #1A4D2E;
+    padding: 5vh;
+    margin: 0px;
+  }
+
+  /* Defining the canva class */
+  .canvas {
+    background-color: #4F6F52;
+    margin: 0px;
+    padding: 0px;
+    width: 100%; /* Full width */
+  }
+
+  .description {
+    /*margin-top: 10px;*/
+    margin-top: 2vh; /* Margin top based on viewport height */
+    width: 90vw;
+    margin: 0 auto; /* Center the row horizontally */
+  }
+
+  .card { /*Main Description / Overview / Requirements Cards*/
+    background-color: #E8DFCA;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    padding: 10px;
+    box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 75%;
+  }
+
+ 
+  
+  .footer {
+    background-color: #1A4D2E;
+    /*padding: 30px;*/
+    padding: 3vh; /* Padding based on viewport height */
+    color: white;
+    text-align: center;
+  }
 
   /* Add a black background color to the top navigation */
   .topnav {
@@ -6,21 +150,22 @@
     overflow: hidden;
     margin: 0px;
   }
-
+  
+  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 16px; /*Resize padding according to viewport width (vw)*/
     text-decoration: none;
-    font-size: 17px;
     border-radius: 10px;
+    font-size: 20px; /* Adjust font size based on viewport width */
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
     /*border: 1px solid #000000;*/
-    border-radius: 0px;
+    /*border-radius: 0px;*/
     box-shadow: 1px solid black;
   }
   
@@ -43,8 +188,15 @@
   }
 
   .navright {
-    float: left;
-    width: 12%;
+    /*float: left;
+    width: 12%;*/
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure they stay on one line */
+  }
+
+  .navright a {
+    white-space: nowrap; /* Prevent text wrapping inside the links */
   }
   
   /* Clear floats after the columns */
@@ -54,31 +206,8 @@
     clear: both;
   }
 
-body {
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #4F6F52;
-}
 
-.canvas {
-    background-color: #4F6F52;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .card {
-    background-color: #E8DFCA;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    padding: 10px;
-    box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 75%;
-  }
-
-.topic, .exercise {
+  .topic, .exercise {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -122,24 +251,124 @@ p, li {
     padding-right: 1%;
     text-align: left; /* Ensures text within paragraphs and list items is left-aligned */
     font: Serif;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
-h1 {
-    text-align: center;
-    font-size: 60px;
-    color: white;
-    margin: 0px;
+/* CHANGES FOR MOBILE DEVICES */
+
+  @media screen and (max-width: 768px) {
+
+    .topnav { /*TOP NAVIGATION LIKE Home, Register OR Forum*/
+        /*visibility: collapse;*/
+        display: flex;
+
+        position: fixed;
+        left: -800px;
+        top: 0;
+        z-index: 999;
+        width: 80vw;
+        height: 100vh;
+        background-color: #E8DFCA;
+        transition: 0.2s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a {
+      display: block;
+      margin-top: 10px;
+      margin-left: 10px;
+      width: 60vw;
+      color: black;
+      background-color: #4F6F52;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .topnav a.active {
+      text-decoration: underline;
+      background-color: #1A4D2E;
+      color: white;
+    }
+
+    .navrow {
+      display: flex;
+      height: fit-content;
+      /*justify-content: space-around;
+      /*margin: 0 auto; /* Center the row horizontally */
+    }
+
+    .navleft {
+      display: block;
+      width: 100%;
+    }
+
+    .navleft h2 {
+      display: block;
+      font-size: 40px;
+      margin-left: 3vw;
+      text-decoration: underline;
+    }
+
+    .navright {
+      display: block;
+
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger span {
+      line-height: 1; /* Adjust spacing between letters if necessary */
+      transition: 0.2s;
+    }
+
+    .maintitle { /*Main Title: HowToWebsite*/
+        padding: 40px;
+        background-color: #1A4D2E;
+    }
+
+    .row { /*OVERVIEW and REQUIREMENTS*/
+        flex-direction: column; /* Stack columns vertically */
+        width: 90vw; /* Full viewport width */
+        align-items: center; /* Center the columns */
+    }
+
+    .card {
+        margin: 3vw;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .column { /*OVERVIEW and REQUIREMENTS*/
+        width: 90vw;
+    }
+
+    .profilecolumn { /*CONTRIBUTORS COLUMNS*/
+        width: 90vw; /* Each profile column takes 90% of the viewport width */
+        max-width: none; /* Remove the maximum width constraint */
+        margin: 10px 0; /* Add some margin between the columns */
+    }
+
+    .profileimage { /*CONTRIBUTORS PICTURES/IMAGES*/
+        max-width: none; /* Remove the maximum width constraint */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .name {
+        font-size: 6vw; /* Adjust font size based on viewport width */
+    }
+    p, li, .job {
+        font-size: 4vw; /* Adjust font size based on viewport width */
+    }    
+
+    h1 {
+        text-align: center;
+        font-size: 10vw;
+        color: white;
+        margin: 0px;
+    }
+    h2 {
+        font-size: 4vw; /* Relative font size based on viewport width */
+        text-align: left;
+    }
   }
-
-  .maintitle {
-    background-color: #1A4D2E;
-    padding: 50px;
-    margin: 0px;
-  }
-
-h2 {
-    font-size: 30px;
-    text-align: center;
-}
-
