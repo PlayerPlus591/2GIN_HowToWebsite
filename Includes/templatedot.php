@@ -227,8 +227,8 @@
 
                         <div class="card">
                             <div class="navigation-buttons">
-                                <a href="<?php echo $nextPage; ?>" class="button">Previous</a>
-                                <a href="<?php echo $currentPage; ?>" class="button">Next</a>
+                                <a href="<?php echo $currentPage; ?>" class="button">Previous</a>
+                                <a href="<?php echo $nextPage; ?>" class="button">Next</a>
                             </div>
                         </div>
                 
