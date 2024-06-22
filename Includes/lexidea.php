@@ -71,7 +71,8 @@
                                 <a href="EventRegistration.html">Event Registration Template</a><p>Description: A small webpage that allows you to input email, name and a choice for the prize.</p>
                                 <a href="BlogPost.php">Working Blog Post</a><p>Description: A small webpage in which you can send comments which get saved in a file.</p>
                                 <a href="buttongame.html">Fun Little ButtonGame</a><p>Description: A small webpage in which you can play a game of clicking a button and avoiding the decoys.</p>
-                                
+                                <br>
+                                <p> If you want to see the code, right-click the mouse and select the last choice "Inspect" to see the code. </p>
                             </div>
                         </div>
 
