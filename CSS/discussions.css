@@ -278,6 +278,14 @@ p {
       background-color: #1A4D2E;
   }
 
+  .maintitle h1 {
+    font-size: 10vw;
+  }
+
+  .welcome {
+    font-size: 4vw;
+  }
+
   .row { /*OVERVIEW and REQUIREMENTS*/
       flex-direction: column; /* Stack columns vertically */
       width: 90vw; /* Full viewport width */
