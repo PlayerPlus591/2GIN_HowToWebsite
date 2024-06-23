@@ -29,6 +29,7 @@
             $email = $_POST["email"];
             $password = $_POST["password"];
             $passwordRepeat = $_POST["repeat_password"];
+            $currentDate = date('F d Y, h:i:s A');
 
             $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
@@ -59,12 +60,12 @@
             }else{
                 
                 //? = placeholder
-                $sql = "INSERT INTO users (dtName, dtEmail, dtPassword) VALUES ( ?, ?, ?)";
+                $sql = "INSERT INTO users (dtName, dtEmail, dtPassword, dtDate) VALUES ( ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($connection);
                 //gives true or false
                 $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
                 if($prepareStmt){
-                    mysqli_stmt_bind_param($stmt,"sss",$fullName,$email,$password_hash);
+                    mysqli_stmt_bind_param($stmt,"ssss",$fullName,$email,$password_hash, $currentDate);
                     mysqli_stmt_execute($stmt);
                     echo "<div class='alert alert-success'>You are registered successfully.</div>";
                 }else{

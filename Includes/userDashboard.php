@@ -25,6 +25,27 @@
         echo '</div>';
         echo '</div>';
     }
+
+    require_once "database.php";
+    // Fetch user information from the database
+    $username = $_SESSION["user"];
+    $sql = "SELECT dtName, dtEmail, dtDate FROM users WHERE dtName = ?";
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+    
+    if ($user) {
+        $fullName = $user['dtName'];
+        $email = $user['dtEmail'];
+        $creationDate = $user['dtDate'];
+    } else {
+        // Handle the case where user data is not found
+        $fullName = "Unknown";
+        $email = "Unknown";
+        $creationDate = "Unknown";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -62,13 +83,13 @@
                     <h2>Profile Information</h2>
                     <ul>
                         <h3>Name:</h3>
-                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
+                        <li><?php echo htmlspecialchars($fullName); ?></li>
                         <br>
                         <h3>Email:</h3>
-                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
+                        <li><?php echo htmlspecialchars($email); ?></li>
                         <br>
                         <h3>Date of Creation:</h3>
-                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
+                        <li><?php echo htmlspecialchars($creationDate); ?></li>
                     </ul>
                 </div>
             </div>
