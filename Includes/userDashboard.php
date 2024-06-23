@@ -31,100 +31,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>HowToWebsite - Dashboard</title>
     <link rel="stylesheet" href="../CSS/userDashboard.css">
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.left = "0px";
-            document.getElementById("hamburger").style.height = "30vw";
-    
-            // Get all span elements inside the hamburger
-            const spans = document.querySelectorAll("#hamburger span");
-            
-            // Set the line-height for each span
-            spans.forEach(span => {
-              span.style.lineHeight = "1.5"; // Adjust this value as necessary
-            });
-        }
-    
-        function closeNav() {
-            document.getElementById("mySidenav").style.left = "-800px";
-            document.getElementById("hamburger").style.height = "20vw";
-    
-            // Get all span elements inside the hamburger
-            const spans = document.querySelectorAll("#hamburger span");
-            
-            // Set the line-height for each span
-            spans.forEach(span => {
-              span.style.lineHeight = "1"; // Adjust this value as necessary
-            });
-        }
-    
-        function toggleNav() {
-            var sidenav = document.getElementById("mySidenav");
-            if (sidenav.style.left === "0px") {
-                closeNav();
-            } else {
-                openNav();
-            }
-        }
-    </script>
+    <script src="../JS/mobileMenu.js"></script>
 </head>
 <body>
     <main>
     <div class="canvas">
         <div class="maintitle">
-            <h1>Welcome, <?php echo htmlspecialchars($_SESSION["user"]); ?>!</h1>
-        </div>
-        
-        <br>
-        <br>
-    
+            <h1>Dashboard</h1>
+        </div>        
+        <br><br>    
         <div class="row">    
             <div class="column">
                 <div class="card" style="display: flex; align-items: center;">
                     <img src="../Images/pfp/S-591_Pistol.png" style="border-radius: 50%; width: 80px; height: 80px; margin-right: 20px;" alt="user Picture">
-                    <h2>Profile Placeholder</h2>
+                    <h2><?php echo htmlspecialchars($_SESSION["user"]); ?></h2>
                 </div>
-
                 <div class="card">
-                    <h2>Profile</h2>
-                    <ul style="margin-left: 20px;">
-                        <li><a href="../Includes/profile.php">Profile</a></li>
-                        <li><a href="../Includes/settings.php">Account Settings</a></li>
-                        <li><a href="../Includes/appearance.php">Appearance</a></li>
-                        <li><a href="../Includes/accessibiliy.php">Accessibility</a></li>
-                        <li><a href="../Includes/notifications.php">Notifications</a></li>
-
+                    <ul>
+                        <li><a class="activeButton" href="../Includes/userDashboard.php">Profile Information</a></li>
+                        <li><a class="inactiveButton" href="../Includes/accountSettings.php">Account Settings</a></li>
                     </ul>
                 </div>
             </div>
     
             <div class="column">
                 <div class="card">
-                    <h2>Placeholder text</h2>
+                    <h2>Profile Information</h2>
                     <ul>
-                        <li><p>more placeholder text</p></li>
-                        <li><p>more placeholder text</p></li>
-                        <li><p>more placeholder text</p></li>
-                        <li><p>more placeholder text</p></li>
-                        <li><p>more placeholder text</p></li>
-                        <li><p>more placeholder text</p></li>
+                        <h3>Name:</h3>
+                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
+                        <br>
+                        <h3>Email:</h3>
+                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
+                        <br>
+                        <h3>Date of Creation:</h3>
+                        <li><?php echo htmlspecialchars($_SESSION["user"]); ?></li>
                     </ul>
                 </div>
             </div>
         </div>
-    
-        <br>
-        <br>
-        <br>
-        <br>
-    
+        <br><br><br><br>
         <div class="footer">
-            <div class="footer">
-                <p>2GIN - 2023/24</p>
-            </div>
+            <div class="footer"><p>2GIN - 2023/24</p></div>
         </div>
     </div>
     </main>     

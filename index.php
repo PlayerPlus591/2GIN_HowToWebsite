@@ -55,42 +55,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HowToWebsite - Homepage</title>
         <link rel="stylesheet" href="CSS/mainpage.css">
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.left = "0px";
-                document.getElementById("hamburger").style.height = "30vw";
-
-                // Get all span elements inside the hamburger
-                const spans = document.querySelectorAll("#hamburger span");
-                
-                // Set the line-height for each span
-                spans.forEach(span => {
-                  span.style.lineHeight = "1.5"; // Adjust this value as necessary
-                });
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.left = "-800px";
-                document.getElementById("hamburger").style.height = "20vw";
-
-                // Get all span elements inside the hamburger
-                const spans = document.querySelectorAll("#hamburger span");
-                
-                // Set the line-height for each span
-                spans.forEach(span => {
-                  span.style.lineHeight = "1"; // Adjust this value as necessary
-                });
-            }
-
-            function toggleNav() {
-                var sidenav = document.getElementById("mySidenav");
-                if (sidenav.style.left === "0px") {
-                    closeNav();
-                } else {
-                    openNav();
-                }
-            }
-        </script>
+        <script src="JS/mobileMenu.js"></script>
     </head>
 
     <body>
@@ -99,9 +64,7 @@
                 <div class="maintitle">
                     <h1>HowToWebsite</h1>
                 </div>
-
                 <br><br>
-
                 <div class="description">
                     <div class="card">
                         <h2>Main Description</h2>
@@ -148,14 +111,14 @@
                         <div class="name">Pedro</div>
                         <p>"Hard at work? More like work while hard"</p>
                         <br>
-                        <div class="job">MySQL</div>
-                        <div class="job">False Information</div>
+                        <div class="job">Backend</div>
+                        <div class="job">MySQL, Content</div>
                     </div>
                     
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/pfp/pfp_ghost.png">
                         <div class="name">Ghost</div>
-                        <p>"Who?"</p>
+                        <p>"Missing, since 1975"</p>
                         <br>
                         <div class="job">Frontend</div>
                         <div class="job">Design</div>
@@ -164,10 +127,10 @@
                     <div class="profilecolumn">
                         <img class="profileimage" src="Images/pfp/pfp_compressed_square.jpg">
                         <div class="name">Deni</div>
-                        <p>"PlayerPlus591"</p>
+                        <p>"I haven't slept once in the past 40 days"</p>
                         <br>
-                        <div class="job">Backend/Frontend</div>
-                        <div class="job">MySQL</div>
+                        <div class="job">Backend & Frontend</div>
+                        <div class="job">MySQL, Layout</div>
                     </div>
                     
                     <div class="profilecolumn">

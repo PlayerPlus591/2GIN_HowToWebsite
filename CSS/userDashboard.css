@@ -87,6 +87,28 @@ body {
 .name {
     font-size: 2vw; /* Adjust font size based on viewport width */
 }
+.activeButton {
+    background-color: #1A4D2E;
+    color: white;
+    text-decoration: underline;
+
+    display: block;
+    width: 28vw;
+    padding: 14px 16px; /*Resize padding according to viewport width (vw)*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.inactiveButton {
+    background-color: #4F6F52;
+    color: #000;
+    text-decoration: none;
+
+    display: block;
+    width: 28vw;
+    padding: 14px 16px; /*Resize padding according to viewport width (vw)*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 p, .job {
     font-size: 1.5vw; /* Adjust font size based on viewport width */
 }
@@ -98,11 +120,20 @@ h1 {
     color: white;
     margin: 0px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  }
+}
 
-  h2 {
+h2 {
     font-size: 2vw; /* Relative font size based on viewport width */
-  }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 15px;
+}
   .maintitle {
     background-color: #1A4D2E;
     padding: 5vh; /* Padding based on viewport height */
@@ -124,13 +155,7 @@ h1 {
     margin: 0 auto; /* Center the row horizontally */
   }
 
-  .card { /*Main Description / Overview / Requirements Cards*/
-    /*background-color: #E8DFCA;
-    border-radius: 10px;
-    margin: 10px;
-    margin-bottom: 5px;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  .card {
     background-color: #E8DFCA;
     border-radius: 1vh; /* Border radius based on viewport height */
     margin: 2vh; /* Margin based on viewport height */
@@ -138,8 +163,6 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
- 
-  
   .footer {
     background-color: #1A4D2E;
     /*padding: 30px;*/
@@ -266,7 +289,6 @@ h1 {
 
     .navright {
       display: block;
-
     }
 
     .hamburger {
@@ -276,6 +298,13 @@ h1 {
     .hamburger span {
       line-height: 1; /* Adjust spacing between letters if necessary */
       transition: 0.2s;
+    }
+
+    .activeButton {
+        width: 60vw;
+    }
+    .inactiveButton {
+        width: 60vw;
     }
 
     .maintitle { /*Main Title: HowToWebsite*/
