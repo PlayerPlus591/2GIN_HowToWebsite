@@ -18,28 +18,7 @@
         <link rel="icon" href="../Images/icons/users_key-5.png" type="image/x-icon"> 
         <link rel="stylesheet" href="https://unpkg.com/98.css">
         <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css">
-
-        <!--Deni Code-->
-        <script>
-            function redirectToHome() {
-                console.log("Redirecting to home...");
-                window.location.href="../index.php";
-            }
-    
-            function toggleFullscreen() {
-                if (!document.fullscreenElement) { //if document isn't in fullscreen
-                    document.documentElement.requestFullscreen().catch(err => {
-                        //give error with the error message attached
-                        alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-                    });
-                } else {
-                    if (document.exitFullscreen) {
-                        //document
-                        document.exitFullscreen();
-                    }
-                }
-            }
-        </script>
+        <script src="../JS/registerButton.js"></script>
     </head>
     <body>
         <div class="container">
