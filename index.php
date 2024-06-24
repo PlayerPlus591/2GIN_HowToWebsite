@@ -131,7 +131,7 @@
                         <p>"I haven't slept once in the past 40 days"</p>
                         <br>
                         <div class="job">Backend & Frontend</div>
-                        <div class="job">MySQL, Layout</div>
+                        <div class="job">MySQL, Design Layout</div>
                     </div>
                     
                     <div class="profilecolumn">
