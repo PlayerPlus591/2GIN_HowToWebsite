@@ -242,10 +242,7 @@
     <script>
 
         document.addEventListener('click', function(e) {
-            if (e.target.tagName === 'H2' && e.target.parentElement.classList.contains('topic')) {
-                var content = e.target.nextElementSibling;
-                toggleDisplay(content);
-            } else if (e.target.tagName === 'H3' && e.target.parentElement.classList.contains('exercise')) {
+            if (e.target.tagName === 'H3' && e.target.parentElement.classList.contains('exercise')) {
                 var content = e.target.nextElementSibling;
                 toggleDisplay(content);
             }
