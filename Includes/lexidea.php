@@ -1,36 +1,41 @@
 <!-- Alexandro x Lou -->
 
 <?php
-    /*Lou */
     session_start();
     if(!isset($_SESSION["user"]))
     {   
-        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
-        echo '<div class="topnav">';
-        echo '<div class="row">';
+        echo '<input onclick="toggleNav()" type="checkbox" id="nav_check" hidden>';
+        echo '<label for="nav_check" class="hamburger" id="hamburger">';
+        echo '<span>M</span><span>E</span><span>N</span><span>U</span>';
+        echo '</label>';
+        echo '<p class="welcome">Welcome to our website</p>';
+        echo '<div id="mySidenav" class="topnav">';
+        echo '<div class="navrow">';
         echo '<div class="navleft">';
+        echo '<h2>HowToWebsite</h2>';
         echo '<a href="../index.php">Home</a>';
         echo '<a class="active" href="templatedot.php">Course</a>';
         echo '<a href="userDashboard.php">Dashboard</a>';
         echo '<a href="discussion.php">Forum</a>';
-        echo '</div>';
-        echo '<div class="navright">';
         echo '<a href="register.php">Sign up</a>';
         echo '<a href="login.php">Log in</a>';  
         echo '</div>';
         echo '</div>';
         echo '</div>';
     }else {
-        echo '<p style="margin: 0px; padding-top: 10px; background-color: #1A4D2E; text-align: center; color: white;">Welcome to our website</p>';
-        echo '<div class="topnav">';
-        echo '<div class="row">';
+        echo '<input onclick="toggleNav()" type="checkbox" id="nav_check" hidden>';
+        echo '<label for="nav_check" class="hamburger" id="hamburger">';
+        echo '<span>M</span><span>E</span><span>N</span><span>U</span>';
+        echo '</label>';
+        echo '<p class="welcome">Welcome to our website</p>';
+        echo '<div id="mySidenav" class="topnav">';
+        echo '<div class="navrow">';
         echo '<div class="navleft">';
+        echo '<h2>HowToWebsite</h2>';
         echo '<a href="../index.php">Home</a>';
         echo '<a class="active" href="templatedot.php">Course</a>';
         echo '<a href="userDashboard.php">Dashboard</a>';
         echo '<a href="discussion.php">Forum</a>';
-        echo '</div>';
-        echo '<div class="navright">';
         echo '<a href="logout.php">Log-out</a>';
         echo '</div>';
         echo '</div>';
