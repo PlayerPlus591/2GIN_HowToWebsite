@@ -1,4 +1,4 @@
-<!-- Alexandro x Lou -->
+<!-- Alexandro -->
 
 <?php
     session_start();
