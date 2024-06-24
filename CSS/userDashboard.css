@@ -88,7 +88,7 @@ body {
     font-size: 2vw; /* Adjust font size based on viewport width */
 }
 .activeButton {
-    background-color: #4F6F52;
+    background-color: #1A4D2E;
     color: white;
     text-decoration: underline;
 
@@ -99,8 +99,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .inactiveButton {
-    background-color: #1A4D2E;
-    color: white;
+    background-color: #4F6F52;
+    color: #000;
     text-decoration: none;
 
     display: block;
