@@ -46,7 +46,7 @@
         <div class="row">    
             <div class="column">
                 <div class="card" style="display: flex; align-items: center;">
-                    <img src="../Images/pfp/S-591_Pistol.png" style="border-radius: 50%; width: 80px; height: 80px; margin-right: 20px;" alt="user Picture">
+                    <img src="../Images/pfp/general_pfp.png" style="border-radius: 50%; width: 80px; height: 80px; margin-right: 20px;" alt="user Picture">
                     <h2><?php echo htmlspecialchars($_SESSION["user"]); ?></h2>
                 </div>
                 <div class="card">
