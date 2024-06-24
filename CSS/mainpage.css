@@ -17,15 +17,27 @@ body {
     text-align: center; 
     color: white;
 }
-.row {
-    opacity: 0;
+.cardRow {
     display: flex;
     width: 80vw; /* Adjust the container width or use auto to fill the width*/
     justify-content: space-around;
     margin: 0 auto; /* Center the row horizontally */
 }
-.rowShow {
+.row {
+    display: flex;
+    width: 80vw; /* Adjust the container width or use auto to fill the width*/
+    justify-content: space-around;
+    margin: 0 auto; /* Center the row horizontally */
+
+    /*Animation*/
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 2s;
+}
+.rowShow { 
+    /*Animation*/
     opacity: 1;
+    filter: blur(0);
 }
 .navrow {
     display: flex;

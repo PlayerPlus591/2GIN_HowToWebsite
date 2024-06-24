@@ -73,7 +73,6 @@
                 <div class="card">
                     <ul>
                         <li><a class="activeButton" href="../Includes/userDashboard.php">Profile Information</a></li>
-                        <li><a class="inactiveButton" href="../Includes/accountSettings.php">Account Settings</a></li>
                     </ul>
                 </div>
             </div>

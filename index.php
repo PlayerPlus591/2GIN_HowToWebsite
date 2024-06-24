@@ -56,7 +56,7 @@
         <title>HowToWebsite - Homepage</title>
         <link rel="stylesheet" href="CSS/mainpage.css">
         <script src="JS/mobileMenu.js"></script>
-        <script src="JS/fadeAnim.js"></script>
+        <script defer src="JS/fadeAnim.js"></script>
     </head>
 
     <body>
@@ -74,7 +74,7 @@
                         use HTML, CSS, JavaScript and more.</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="cardRow">
                     <div class="column">
                         <div class="card">
                             <h2>Overview</h2>
