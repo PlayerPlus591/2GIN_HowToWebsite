@@ -1,7 +1,7 @@
 <!-- Alexandro x Lou -->
 
 <?php
-    /*Lou & Deni*/
+    /* Lou & Deni */
     session_start();
     if(!isset($_SESSION["user"]))
     {   
