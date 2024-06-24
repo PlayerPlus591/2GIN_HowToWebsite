@@ -18,10 +18,14 @@ body {
     color: white;
 }
 .row {
+    opacity: 0;
     display: flex;
     width: 80vw; /* Adjust the container width or use auto to fill the width*/
     justify-content: space-around;
     margin: 0 auto; /* Center the row horizontally */
+}
+.rowShow {
+    opacity: 1;
 }
 .navrow {
     display: flex;

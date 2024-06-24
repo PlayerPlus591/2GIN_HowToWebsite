@@ -56,6 +56,7 @@
         <title>HowToWebsite - Homepage</title>
         <link rel="stylesheet" href="CSS/mainpage.css">
         <script src="JS/mobileMenu.js"></script>
+        <script src="JS/fadeAnim.js"></script>
     </head>
 
     <body>
@@ -134,7 +135,7 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/Flep.webp">
+                        <img class="profileimage" src="Images/alexprof.jpg">
                         <div class="name">Alexandro</div>
                         <p>"Hallo Polen"</p>
                         <br>
