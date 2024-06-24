@@ -1,3 +1,5 @@
+//Deni
+
 function redirectToHome() {
     console.log("Redirecting to home...");
     window.location.href="../index.php";

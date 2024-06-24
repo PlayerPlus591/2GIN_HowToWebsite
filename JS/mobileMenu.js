@@ -1,3 +1,5 @@
+//Deni
+
 function openNav() {
     document.getElementById("mySidenav").style.left = "0px";
     document.getElementById("hamburger").style.height = "30vw";
