@@ -242,10 +242,7 @@
     <script>
 
         document.addEventListener('click', function(e) {
-            if (e.target.tagName === 'H2' && e.target.parentElement.classList.contains('topic')) {
-                var content = e.target.nextElementSibling;
-                toggleDisplay(content);
-            } else if (e.target.tagName === 'H3' && e.target.parentElement.classList.contains('exercise')) {
+            if (e.target.tagName === 'H3' && e.target.parentElement.classList.contains('exercise')) {
                 var content = e.target.nextElementSibling;
                 toggleDisplay(content);
             }
@@ -259,21 +256,7 @@
             }
         }
 
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        function changeColor() {
-            const square = document.getElementById('colorSquare');
-            square.style.backgroundColor = getRandomColor();
-        }
-
-        setInterval(changeColor, 100); 
+        
     </script>
     </body>
 </html>
