@@ -305,6 +305,12 @@ h1 {
         align-items: center; /* Center the columns */
     }
 
+    .cardRow {
+        flex-direction: column; /* Stack columns vertically */
+        width: 90vw; /* Full viewport width */
+        align-items: center; /* Center the columns */
+    }
+
     .column { /*OVERVIEW and REQUIREMENTS*/
         width: 90vw;
     }
