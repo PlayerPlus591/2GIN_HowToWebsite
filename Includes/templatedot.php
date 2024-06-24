@@ -260,8 +260,6 @@
         }
 
         
-
-        setInterval(changeColor, 100); 
     </script>
     </body>
 </html>
