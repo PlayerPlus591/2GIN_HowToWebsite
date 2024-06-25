@@ -58,7 +58,7 @@
         <div class="post">
             <h1>Blog Post Title</h1>
             <p>Posted on June 22, 2024</p>
-            <p>This is a sample blog post content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tristique justo. Nullam a ligula nunc. Vestibulum gravida suscipit tortor.</p>
+            <p>This is a sample blog post content.</p>
         </div>
         
         <div class="comments">
