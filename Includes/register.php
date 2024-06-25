@@ -18,7 +18,7 @@
     <link rel="icon" href="../Images/icons/network_internet_pcs_installer-1.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="stylesheet" href="../CSS/RegisterAndLoginStyles.css"> <!-- Lou Code -->
-    <script defer src="../JS/registerButton.js"></script>
+    <script defer src="../JS/registerButtons.js"></script>
 </head>
 <body>
     <div class="container">
