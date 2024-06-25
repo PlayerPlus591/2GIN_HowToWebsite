@@ -42,7 +42,7 @@
         echo '</div>';
         echo '</div>';
     }
-
+//Alexandro
     $currentPage = 'templatedot.php';
     $nextPage = 'lexidea.php';
 ?>
