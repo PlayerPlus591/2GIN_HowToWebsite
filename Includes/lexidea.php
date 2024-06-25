@@ -1,6 +1,7 @@
-<!-- Alexandro -->
+<!-- Alexandro & Lou -->
 
 <?php
+//Lou & Deni
     session_start();
     if(!isset($_SESSION["user"]))
     {   
@@ -41,7 +42,7 @@
         echo '</div>';
         echo '</div>';
     }
-
+//Alexandro
     $currentPage = 'lexidea.php';
     $nextPage = 'templatedot.php';
 ?>
