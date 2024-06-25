@@ -135,9 +135,9 @@
                     </div>
                     
                     <div class="profilecolumn">
-                        <img class="profileimage" src="Images/alexprof.jpg">
+                        <img class="profileimage" src="Images/pfp/Majisto.jpg">
                         <div class="name">Alexandro</div>
-                        <p>"Hallo Polen"</p>
+                        <p>"."</p>
                         <br>
                         <div class="job">Backend</div>
                         <div class="job">Content</div>
